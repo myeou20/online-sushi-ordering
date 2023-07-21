@@ -1,17 +1,14 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
   margin: 0;
   padding: 0;
-  background-image: url(./images/home_background.jpg); /* Add the path to your background image here */
-  background-size: cover;
-  background-position: center;
-  color: #333; /* Set the default text color */
 }
 
 header {
   background-color: #333;
   color: #fff;
-  padding: 20px; /* Increase the padding to make the heading bar bigger */
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,6 +16,15 @@ header {
 
 .logo {
   flex: 1;
+}
+/* Update the cart word size to 22 pixels */
+.cart span {
+  font-size: 22px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
 }
 
 nav ul {
@@ -35,8 +41,9 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 22px; /* Increase the font size to make the list items bigger */
+  font-size: 22px;
 }
+
 cart {
   display: flex;
   align-items: center;
@@ -50,7 +57,6 @@ cart {
 
 main {
   padding: 20px;
-  margin-bottom: 60px; /* Create a gap of 60px at the bottom */
 }
 
 #hero {
@@ -95,8 +101,10 @@ footer {
   padding: 10px;
   position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
 }
+
 .feedback a.feedback-link {
   font-size: 20px;
   text-decoration: underline;
@@ -106,6 +114,7 @@ footer {
 .feedback p {
   font-size: 18px;
 }
+
 .social-icons {
   margin-top: 10px;
 }
@@ -120,8 +129,4 @@ footer {
   height: 30px;
 }
 
-/* Additional Styles to Position the Cart on the Top Right */
-nav {
-  flex: 1;
-  text-align: right;
-}
+/*

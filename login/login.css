@@ -3,10 +3,47 @@ body {
   background-color: #f0f0f0;
   margin: 0;
   padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 100vh;
+}
+
+.logo {
+  flex: 1;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+cart {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Update the cart word size to 22 pixels */
+.cart span {
+  font-size: 22px;
 }
 
 .login-container {
@@ -15,6 +52,7 @@ body {
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  margin: 100px auto;
 }
 
 h2 {
@@ -31,6 +69,8 @@ form {
 
 .form-group {
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column; /* Change to column to stack the elements vertically */
 }
 
 label {
@@ -55,6 +95,7 @@ input[type="submit"] {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 10px; /* Create space between the input elements */
 }
 
 input[type="submit"]:hover {
@@ -62,10 +103,11 @@ input[type="submit"]:hover {
 }
 
 .forgot-password-link {
-  text-align: right;
+  text-align: right; /* Align "Forgot Password" link to the right */
   color: #007bff;
   text-decoration: none;
   font-size: 16px;
+  margin-top: 18px; /* Add margin to shift it down a bit */
 }
 
 .forgot-password-link:hover {
@@ -90,4 +132,44 @@ input[type="submit"]:hover {
 
 .signup-link a:hover {
   text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.feedback a.feedback-link {
+  font-size: 20px;
+  text-decoration: underline;
+  color: #f2ecec;
+}
+
+.feedback p {
+  font-size: 18px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons .icon {
+  display: inline-block;
+  margin: 5px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Additional Styles to Position the Cart on the Top Right */
+nav {
+  flex: 1;
+  text-align: right;
 }
