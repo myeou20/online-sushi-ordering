@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(./images/home_background.jpg); /* Add the path to your background image here */
+  background-size: cover;
+  background-position: center;
+  color: #333; /* Set the default text color */
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px; /* Increase the padding to make the heading bar bigger */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  flex: 1;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px; /* Increase the font size to make the list items bigger */
+}
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+main {
+  padding: 20px;
+  margin-bottom: 60px; /* Create a gap of 60px at the bottom */
+}
+
+#hero {
+  text-align: center;
+  padding: 40px;
+  background-color: #f2f2f2;
+}
+
+#hero h2 {
+  color: #333;
+}
+
+#hero p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 20px 40px; /* Increase the padding to make the button bigger */
+  background-color: #ff0000; /* Set the background color to red */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px; /* Add rounded corners to make the button round */
+  font-size: 20px; /* Increase the font size to make the text bigger */
+}
+
+#specials {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.special-item {
+  display: inline-block;
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.feedback a.feedback-link {
+  font-size: 20px;
+  text-decoration: underline;
+  color: #f2ecec; /* Change the link color to black to make it more visible */
+}
+
+.feedback p {
+  font-size: 18px;
+}
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons .icon {
+  display: inline-block;
+  margin: 5px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Additional Styles to Position the Cart on the Top Right */
+nav {
+  flex: 1;
+  text-align: right;
+}
