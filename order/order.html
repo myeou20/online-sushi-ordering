@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myo Sushi | Order</title>
+  <link rel="stylesheet" href="order.css"> <!-- Use the CSS for the order page -->
+
+  <!-- Add the JavaScript file for the shopping cart functionality -->
+  <script src="order.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Welcome to Myo Sushi Online Order</h1>
+    </div>
+    <div class="cart">
+
+    </div>
+      <img src="../images/sushi.png" alt="Cart Icon">
+      <span id="cart-count">0</span> <!-- Add a span to display the number of items in the cart -->
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="../menu/menu.html">Menu</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="../about-us/about-us.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="../login/login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="order">
+      <h2>Review Your Order</h2>
+      <p>Select your favorite sushi items from the menu and place your order online. We'll have it ready for pickup or delivery.</p>
+      <div class="cart-container">
+        <h3>Items:</h3>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0</span></p>
+        <button id="review" class="btn">Review</button>
+        <button id="edit" class="btn">Edit</button>
+        <button id="clear" class="btn">Clear</button>
+      </div>
+
+    <section id="pickup">
+      <h2>Pickup Date and Time</h2>
+      <form id="order-form">
+        <label for="pickup-date">Pickup Date:</label>
+        <input type="date" id="pickup-date" required>
+
+        <label for="pickup-time">Pickup Time:</label>
+        <input type="time" id="pickup-time" required>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" required>
+
+        <button class="btn" onclick="placeOrder()">Place Order</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="feedback">
+      <a href="feedback.html" class="feedback-link">Feedback</a>
+      <div class="social-icons">
+        <!-- Add your social media icons here -->
+        <a href="#" class="icon"><img src="../images/facebook.png" alt="Facebook"></a>
+        <a href="#" class="icon"><img src="../images/twitter.png" alt="Twitter"></a>
+        <a href="#" class="icon"><img src="../images/instagram.png" alt="Instagram"></a>
+        <!-- Add more social media icons as needed -->
+      </div>
+      <p>We value your feedback. Let us know how we can improve your experience.</p>
+    </div>
+    <p>&copy; 2023 Myo Sushi. All rights reserved.</p>
+  </footer>
+</body>
+</html>
